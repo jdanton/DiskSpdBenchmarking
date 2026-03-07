@@ -1,4 +1,12 @@
-$path = '/Users/joey/Dropbox/DiskSpd/perfplus'
+param(
+    [Parameter(Mandatory = $false)]
+    [string]$Path = $PSScriptRoot
+)
+
+if (-not (Test-Path -Path $Path)) {
+    Write-Host "Error: The specified path '$Path' does not exist." -ForegroundColor Red
+    exit 1
+}
 
 # Initialize a dictionary to store all percentile data
 $allResults = @{}
