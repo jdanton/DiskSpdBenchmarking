@@ -140,9 +140,9 @@ function New-BarChartSvg {
   <style>
     text { font-family: 'Segoe UI', Arial, sans-serif; }
     .title { font-size: 18px; font-weight: bold; fill: #333; }
-    .axis-label { font-size: 12px; fill: #666; }
-    .bar-label { font-size: 11px; fill: #333; text-anchor: middle; }
-    .value-label { font-size: 10px; fill: #333; text-anchor: middle; }
+    .axis-label { font-size: 16px; fill: #666; }
+    .bar-label { font-size: 18px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .value-label { font-size: 16px; fill: #333; text-anchor: middle; font-weight: bold; }
     .legend-text { font-size: 12px; fill: #333; }
     .gridline { stroke: #e0e0e0; stroke-width: 1; stroke-dasharray: 4,4; }
   </style>
